@@ -1,4 +1,4 @@
-package com.c2.mealonwheels.model;
+package com.c2.mealonwheels.Model;
 
 import java.util.ArrayList;
 
@@ -9,11 +9,11 @@ import java.util.ArrayList;
 public class mDirection {
     public ArrayList<routes> routes;
 
-    public mDirection(ArrayList<com.c2.mealonwheels.model.routes> routes) {
+    public mDirection(ArrayList<com.c2.mealonwheels.Model.routes> routes) {
         this.routes = routes;
     }
 
-    public ArrayList<com.c2.mealonwheels.model.routes> getRoutes() {
+    public ArrayList<com.c2.mealonwheels.Model.routes> getRoutes() {
         return routes;
     }
 }

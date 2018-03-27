@@ -1,4 +1,4 @@
-package com.c2.mealonwheels.model;
+package com.c2.mealonwheels.Model;
 
 import java.util.ArrayList;
 
@@ -9,11 +9,11 @@ import java.util.ArrayList;
 public class legs {
     public ArrayList<steps> steps;
 
-    public legs(ArrayList<com.c2.mealonwheels.model.steps> steps) {
+    public legs(ArrayList<com.c2.mealonwheels.Model.steps> steps) {
         this.steps = steps;
     }
 
-    public ArrayList<com.c2.mealonwheels.model.steps> getSteps() {
+    public ArrayList<com.c2.mealonwheels.Model.steps> getSteps() {
         return steps;
     }
 }

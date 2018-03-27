@@ -1,6 +1,6 @@
-package com.c2.mealonwheels.interfaces;
+package com.c2.mealonwheels.Interfaces;
 
-import com.c2.mealonwheels.model.mDirection;
+import com.c2.mealonwheels.Model.mDirection;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

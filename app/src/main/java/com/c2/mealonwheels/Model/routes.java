@@ -1,4 +1,4 @@
-package com.c2.mealonwheels.model;
+package com.c2.mealonwheels.Model;
 
 import java.util.ArrayList;
 
@@ -9,11 +9,11 @@ import java.util.ArrayList;
 public class routes {
     public ArrayList<legs> legs;
 
-    public routes(ArrayList<com.c2.mealonwheels.model.legs> legs) {
+    public routes(ArrayList<com.c2.mealonwheels.Model.legs> legs) {
         this.legs = legs;
     }
 
-    public ArrayList<com.c2.mealonwheels.model.legs> getLegs() {
+    public ArrayList<com.c2.mealonwheels.Model.legs> getLegs() {
         return legs;
     }
 }

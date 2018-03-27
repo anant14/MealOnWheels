@@ -22,7 +22,9 @@ public class Signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         FirebaseAuth auth = FirebaseAuth.getInstance();
         if (auth.getCurrentUser() != null) {
-            // already signed in
+            Intent i=new Intent(Signup.this,MainActivity.class);
+            startActivity(i);
+            finish();
         } else {
             List<AuthUI.IdpConfig> providers = Arrays.asList(
                     new AuthUI.IdpConfig.Builder(AuthUI.EMAIL_PROVIDER).build(),
