@@ -23,7 +23,9 @@
         </activity>
         <activity android:name=".Activity.Signup" />
         <activity android:name=".Activity.MainActivity" />
-        <activity android:name=".Activity.ShowRoutes"></activity>
+        <activity android:name=".Activity.ShowRoutes" />
+        <activity android:name=".Activity.preferences" />
+        <activity android:name=".Activity.ShowRest"></activity>
     </application>
 
 </manifest>

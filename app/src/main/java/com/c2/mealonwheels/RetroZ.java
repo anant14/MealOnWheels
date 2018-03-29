@@ -11,7 +11,7 @@ public class RetroZ{
     public static Retrofit getClient()
     {
         Retrofit retrofit= new Retrofit.Builder()
-                .baseUrl("https://maps.googleapis.com/maps/api/directions/json?")
+                .baseUrl("https://developers.zomato.com/api/v2.1/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

@@ -3,7 +3,6 @@ package com.c2.mealonwheels.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,6 +37,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent i=new Intent(MainActivity.this,ShowRoutes.class);
                 i.putExtra("from",from);
                 i.putExtra("to",to);
+                startActivity(i);
+            }
+        });
+
+        BtnRe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(MainActivity.this,ShowRest.class);
                 startActivity(i);
             }
         });

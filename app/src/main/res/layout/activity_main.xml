@@ -47,5 +47,10 @@
         android:text="Find restaraunt"
         android:id="@+id/btnRe"
         android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="match_parent"
+        android:text="go with friends"
+        android:id="@+id/btngwf"
+        android:layout_height="wrap_content" />
 
 </android.support.v7.widget.LinearLayoutCompat>
