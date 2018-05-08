@@ -46,15 +46,13 @@ public class RestAdapter extends RecyclerView.Adapter<RestAdapter.holderRest>{
         holder.tvprice.setText(String.valueOf(nearby_restaurants.get(position).getRestaurant().getAverage_cost_for_two()));
         holder.tvrating.setText(String.valueOf(nearby_restaurants.get(position).getRestaurant().getUser_rating().getAggregate_rating()));
         if(nearby_restaurants.get(position).getRestaurant().getFeatured_image().isEmpty()){
-            holder.foodimg.setImageResource(R.drawable.star_rating);
+            holder.foodimg.setImageResource(R.drawable.deafult_rest);
         }
-        else
-        {
+        else {
             Picasso.get().load(nearby_restaurants.get(position).getRestaurant().getFeatured_image()).into(holder.foodimg);
         }
-
-
         holder.tvlocation.setText(nearby_restaurants.get(position).getRestaurant().getLocation().getLocality());
+        Log.d(TAG, "onBindViewHolder: "+nearby_restaurants.get(position).getRestaurant().getPhotos().get(0).getRes_id());
     }
 
     @Override

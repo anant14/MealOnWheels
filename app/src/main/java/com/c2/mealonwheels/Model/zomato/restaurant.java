@@ -1,5 +1,7 @@
 package com.c2.mealonwheels.Model.zomato;
 
+import java.util.ArrayList;
+
 /**
  * Created by anant bansal on 3/29/2018.
  */
@@ -11,6 +13,15 @@ public class restaurant {
     public user_rating user_rating;
     public location location;
     public String featured_image;
+    public ArrayList<photos> photos;
+
+    public ArrayList<com.c2.mealonwheels.Model.zomato.photos> getPhotos() {
+        return photos;
+    }
+
+    public void setPhotos(ArrayList<com.c2.mealonwheels.Model.zomato.photos> photos) {
+        this.photos = photos;
+    }
 
     public restaurant(String featured_image) {
         this.featured_image = featured_image;

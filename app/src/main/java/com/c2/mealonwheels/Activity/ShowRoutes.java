@@ -38,24 +38,23 @@ public class ShowRoutes extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         final ArrayList<routes> arrayListRoutes=new ArrayList<>();
-
-        direction direction= RetroD.getClient().create(com.c2.mealonwheels.Interfaces.direction.class);
-        direction.getRoutes(source,dest,key).enqueue(new Callback<mDirection>() {
-            @Override
-            public void onResponse(Call<mDirection> call, Response<mDirection> response) {
-                Log.d("ShowRoutes", "onResponse: "+response.body());
-                for(int i=0;i<response.body().getRoutes().size();i++){
-                    arrayListRoutes.add(response.body().getRoutes().get(i));
+            direction direction= RetroD.getClient().create(com.c2.mealonwheels.Interfaces.direction.class);
+            direction.getRoutes(source,dest,key).enqueue(new Callback<mDirection>() {
+                @Override
+                public void onResponse(Call<mDirection> call, Response<mDirection> response) {
+                    Log.d("ShowRoutes", "onResponse: "+response.body());
+                    for(int i=0;i<response.body().getRoutes().size();i++){
+                        arrayListRoutes.add(response.body().getRoutes().get(i));
+                    }
+                    RoutesAdapter routesAdapter=new RoutesAdapter(ShowRoutes.this,arrayListRoutes);
+                    recyclerView.setAdapter(routesAdapter);
                 }
-                RoutesAdapter routesAdapter=new RoutesAdapter(ShowRoutes.this,arrayListRoutes);
-                recyclerView.setAdapter(routesAdapter);
-            }
 
-            @Override
-            public void onFailure(Call<mDirection> call, Throwable t) {
-                Log.d("ShowRoutes", "onFailure: "+t.getMessage());
-            }
-        });
-
+                @Override
+                public void onFailure(Call<mDirection> call, Throwable t) {
+                    Log.d("ShowRoutes", "onFailure: "+t.getMessage());
+                }
+            });
     }
+
 }

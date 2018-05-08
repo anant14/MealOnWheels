@@ -19,4 +19,5 @@ public interface zomato {
     @GET("geocode")
     Call<main> getRoutes(@Query("lat") String latitude,
                          @Query("lon") String longitude);
+
 }

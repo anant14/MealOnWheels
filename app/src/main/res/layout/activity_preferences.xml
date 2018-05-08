@@ -17,42 +17,43 @@
         android:layout_height="wrap_content" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxNI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="North Indian" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkBoxFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Fast food" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/checkBoxSI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="South Indian" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/checkBoxCH"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Chinese" />
 
     <CheckBox
         android:layout_width="match_parent"
+        android:id="@+id/checkBoxCO"
         android:layout_height="wrap_content"
         android:text="Continental" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/checkBoxDE"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Desserts" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/checkBoxIT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Italian" />
@@ -60,6 +61,9 @@
     <Button
         android:layout_width="wrap_content"
         android:text="Submit"
+        android:layout_margin="10dp"
+        android:id="@+id/btnsubit"
+        android:background="@color/fbutton_color_alizarin"
         android:layout_gravity="center"
         android:layout_height="wrap_content" />
 
