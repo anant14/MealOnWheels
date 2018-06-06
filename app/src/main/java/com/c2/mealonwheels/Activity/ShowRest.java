@@ -34,6 +34,7 @@ public class ShowRest extends AppCompatActivity {
 
         final ArrayList<nearby_restaurants> nearby_restaurants=new ArrayList<>();
 
+
         final zomato zomato= RetroZ.getClient().create(com.c2.mealonwheels.Interfaces.zomato.class);
         zomato.getRoutes(getIntent().getStringExtra("lat"),getIntent().getStringExtra("lng")).enqueue(new Callback<main>() {
             @Override
@@ -52,8 +53,5 @@ public class ShowRest extends AppCompatActivity {
 
             }
         });
-
-
-
     }
 }

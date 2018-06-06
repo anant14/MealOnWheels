@@ -77,5 +77,15 @@
         app:shadowHeight="5dp"
         android:text="Edit preferences"
         android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="250dp"
+        android:text="Recommended Restaurant"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        app:cornerRadius="5dp"
+        android:id="@+id/btnrr"
+        android:shadowColor="@color/fbutton_color_alizarin"
+        app:shadowEnabled="true"
+        android:layout_height="wrap_content" />
 
 </android.support.v7.widget.LinearLayoutCompat>

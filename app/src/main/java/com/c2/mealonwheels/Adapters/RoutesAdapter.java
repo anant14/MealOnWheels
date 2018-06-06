@@ -77,7 +77,6 @@ public class RoutesAdapter extends RecyclerView.Adapter<RoutesAdapter.holderRout
                 }
                 holder.tvdist.setText(routes.get(0).getLegs().get(0).getSteps().get(position).getDistance().text);
                 holder.tvdur.setText(routes.get(0).getLegs().get(0).getSteps().get(position).getDuration().text);
-                holder.tvway.setText(routes.get(0).getLegs().get(0).getSteps().get(position).html_instructions);
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -140,7 +139,6 @@ public class RoutesAdapter extends RecyclerView.Adapter<RoutesAdapter.holderRout
                 if(h1>0){holder.tvdur.setText(h1+" hours"+m1+" minutes");}
                 else
                 {holder.tvdur.setText(m1+" minutes");}
-                holder.tvway.setText(routes.get(0).getLegs().get(0).getSteps().get(position).html_instructions);
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -161,14 +159,12 @@ public class RoutesAdapter extends RecyclerView.Adapter<RoutesAdapter.holderRout
     public class holderRoutes extends RecyclerView.ViewHolder{
         TextView tvdist;
         TextView tvdur;
-        TextView tvway;
         View rootview;
 
         public holderRoutes(View itemView) {
             super(itemView);
             tvdist=itemView.findViewById(R.id.tvdist);
             tvdur=itemView.findViewById(R.id.tvdur);
-            tvway=itemView.findViewById(R.id.tvway);
             rootview=itemView;
         }
     }

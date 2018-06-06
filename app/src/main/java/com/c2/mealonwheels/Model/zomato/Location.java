@@ -4,10 +4,10 @@ package com.c2.mealonwheels.Model.zomato;
  * Created by anant bansal on 3/29/2018.
  */
 
-public class location {
+public class Location {
     public String locality;
 
-    public location(String locality) {
+    public Location(String locality) {
         this.locality = locality;
     }
 

@@ -1,7 +1,5 @@
 package com.c2.mealonwheels.Model.zomato;
 
-import java.util.ArrayList;
-
 /**
  * Created by anant bansal on 3/29/2018.
  */
@@ -11,16 +9,16 @@ public class restaurant {
     public int average_cost_for_two;
     public String cuisines;
     public user_rating user_rating;
-    public location location;
+    public Location location;
     public String featured_image;
-    public ArrayList<photos> photos;
+    public R R;
 
-    public ArrayList<com.c2.mealonwheels.Model.zomato.photos> getPhotos() {
-        return photos;
+    public com.c2.mealonwheels.Model.zomato.R getR() {
+        return R;
     }
 
-    public void setPhotos(ArrayList<com.c2.mealonwheels.Model.zomato.photos> photos) {
-        this.photos = photos;
+    public void setR(com.c2.mealonwheels.Model.zomato.R r) {
+        R = r;
     }
 
     public restaurant(String featured_image) {
@@ -35,12 +33,12 @@ public class restaurant {
         this.featured_image = featured_image;
     }
 
-    public restaurant(String name, int average_cost_for_two, String cuisines, user_rating user_rating, location location) {
+    public restaurant(String name, int average_cost_for_two, String cuisines, user_rating user_rating, Location Location) {
         this.name = name;
         this.average_cost_for_two = average_cost_for_two;
         this.cuisines = cuisines;
         user_rating = user_rating;
-        location = location;
+        Location = Location;
     }
 
     public String getName() {
@@ -59,7 +57,7 @@ public class restaurant {
         return user_rating;
     }
 
-    public location getLocation() {
+    public Location getLocation() {
         return location;
     }
 
@@ -79,7 +77,7 @@ public class restaurant {
         user_rating = user_rating;
     }
 
-    public void setLocation(location location) {
-        location = location;
+    public void setLocation(Location Location) {
+        Location = Location;
     }
 }

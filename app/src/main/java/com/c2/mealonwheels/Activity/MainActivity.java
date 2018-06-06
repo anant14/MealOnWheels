@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnef;
     String from;
     String to;
+    Button btnrr;
     public static final String TAG="MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +33,7 @@ public class MainActivity extends AppCompatActivity {
         BtnR=findViewById(R.id.btnR);
         Btngwf=findViewById(R.id.btngwf);
         btnef=findViewById(R.id.btnef);
-
-       // BtnRe=findViewById(R.id.btnRe);
-
-
+        btnrr=findViewById(R.id.btnrr);
 
         BtnR.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +72,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i=new Intent(MainActivity.this,preferences.class);
+                startActivity(i);
+            }
+        });
+
+        btnrr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(MainActivity.this,Recommend.class);
                 startActivity(i);
             }
         });

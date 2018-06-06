@@ -28,7 +28,8 @@
         <activity android:name=".Activity.ShowRest" />
         <activity android:name=".Activity.Super_Finder" />
         <activity android:name=".Activity.conn" />
-        <activity android:name=".Activity.Rest_detail"></activity>
+        <activity android:name=".Activity.Rest_detail" />
+        <activity android:name=".Activity.Recommend"></activity>
     </application>
 
 </manifest>
